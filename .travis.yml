@@ -13,6 +13,11 @@ before_install:
 install:
 - travis_wait pip install -r test_requirements.txt
 
+addons:
+  sauce_connect:
+    username: "chrisjsewell"
+    access_key: "2428b132-dd74-4326-a484-95eace873558"
+
 script:
 - py.test
 
