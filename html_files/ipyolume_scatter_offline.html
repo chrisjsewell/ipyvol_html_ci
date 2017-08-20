@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPyVolume Widget</title>
+    
+</head>
+<body>
+
+
+<link href="js/subdir/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">    
+<script src="js/subdir/require.min.v2.3.4.js"  data-main='./js/subdir/' ></script>
+<script>
+    require.config({
+      map: {
+        '*': {
+          'ipyvolume': 'ipyvolume_v0.4.0-alpha.3',
+          'three': 'three_v0.85.0'
+        }
+      }})
+</script>
+
+<script src="js/subdir/embed-amd_v0.9.0.js"></script>
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "0b797a795e6d4ef680a01d15f93cea60": {
+      "model_name": "VBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "@jupyter-widgets/controls",
+        "_model_module_version": "1.0.0",
+        "_model_name": "VBoxModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/controls",
+        "_view_module_version": "1.0.0",
+        "_view_name": "VBoxView",
+        "box_style": "",
+        "children": [
+          "IPY_MODEL_cc0a752744fb4432a4785b111e960029"
+        ],
+        "layout": "IPY_MODEL_2ea7aca13bec4383b4af0006a6566c0b"
+      }
+    },
+    "cc0a752744fb4432a4785b111e960029": {
+      "model_name": "FigureModel",
+      "model_module": "ipyvolume",
+      "model_module_version": "~0.4.0-alpha.3",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "ipyvolume",
+        "_model_module_version": "~0.4.0-alpha.3",
+        "_model_name": "FigureModel",
+        "_view_count": null,
+        "_view_module": "ipyvolume",
+        "_view_module_version": "~0.4.0-alpha.3",
+        "_view_name": "FigureView",
+        "ambient_coefficient": 0.5,
+        "angle_order": "XYZ",
+        "anglex": 0.0,
+        "angley": 0.0,
+        "anglez": 0.0,
+        "animation": 1000.0,
+        "animation_exponent": 0.5,
+        "camera_control": "trackball",
+        "camera_fov": 45.0,
+        "data_max": 0.0,
+        "data_min": 0.0,
+        "diffuse_coefficient": 0.8,
+        "downscale": 1,
+        "eye_separation": 6.4,
+        "height": 500,
+        "layout": "IPY_MODEL_60f8da8f3cfb420597c66f233e8778e9",
+        "matrix_projection": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "matrix_world": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "meshes": [],
+        "render_continuous": false,
+        "scatters": [
+          "IPY_MODEL_d641aa56aae74251b99e7aac4860adfe"
+        ],
+        "show": "Volume",
+        "specular_coefficient": 0.5,
+        "specular_exponent": 5.0,
+        "stereo": false,
+        "style": {
+          "axes": {
+            "visible": true,
+            "label": {
+              "color": "black"
+            },
+            "ticklabel": {
+              "color": "black"
+            },
+            "color": "black"
+          },
+          "box": {
+            "visible": true
+          },
+          "background-color": "white"
+        },
+        "tf": null,
+        "volume_data": null,
+        "width": 400,
+        "xlabel": "x",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylabel": "y",
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "zlabel": "z",
+        "zlim": [
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "60f8da8f3cfb420597c66f233e8778e9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "d641aa56aae74251b99e7aac4860adfe": {
+      "model_name": "ScatterModel",
+      "model_module": "ipyvolume",
+      "model_module_version": "~0.4.0-alpha.3",
+      "state": {
+        "_dom_classes": [],
+        "_model_module": "ipyvolume",
+        "_model_module_version": "~0.4.0-alpha.3",
+        "_model_name": "ScatterModel",
+        "_view_count": null,
+        "_view_module": "ipyvolume",
+        "_view_module_version": "~0.4.0-alpha.3",
+        "_view_name": "ScatterView",
+        "color": "red",
+        "color_selected": "white",
+        "connected": false,
+        "geo": "diamond",
+        "layout": "IPY_MODEL_f97d31da196c480baf213764722f0418",
+        "selected": null,
+        "sequence_index": 0,
+        "size": 2,
+        "size_selected": 2.6,
+        "vx": null,
+        "vy": null,
+        "vz": null,
+        "x": [
+          {
+            "dtype": "float32",
+            "shape": [
+              100
+            ]
+          }
+        ],
+        "y": [
+          {
+            "dtype": "float32",
+            "shape": [
+              100
+            ]
+          }
+        ],
+        "z": [
+          {
+            "dtype": "float32",
+            "shape": [
+              100
+            ]
+          }
+        ]
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "x",
+            0,
+            "buffer"
+          ],
+          "data": "8PZaPb9OEj7lXbM+atYpPofW9j679b8+oMwRP9OPYD7+Alk/CMm7Pj0qPz6/g0w/8ZayPp9xfT4SNB0/IWJXPipnQz9yJ2I+TPkgP7CyDz8qyn0+j634PYtXQT/FRrU+2zwdPyF6cT/WElQ+xBRdP6Ltqz6Z1xw/8zVVP8jZCD+n/3s/CI0tP/+Azz4y/H4/rNDqPS1mcD9yLjg/+8QNPlP2LD8F5k4/4xpqP6B0tz2b1C46Kn6GPhLyQT6SpmE/vtIkP9LVtD39Rmc/Qz/lPngTGz9CG0o+AEzdPgw1Mz6SHsA9D2b6PTZwzD6MekM/d5drPdaeET/cjQY/+XcdP/6J1z67bxg/QlAEP3mxVj/HROo+RWQeP6zlKz4ianM//aPUPW9RhT6HSBo/zxIzP25SiT4KyK4+KzOaPcPiyj4uNmU/6XphPk3VYz+aPYM+eGMDPgmc6D5mN1Y/1BDKPUr2dj+4dyg97cydPlEshj6P2N4+tt+HPsCrTz+rRpQ+Qh5jP53lnj7E5l4/0DS6Pg=="
+        },
+        {
+          "encoding": "base64",
+          "path": [
+            "y",
+            0,
+            "buffer"
+          ],
+          "data": "tOAEPzVnIz6m3Vo/7pN8PwUMZT5Xlr89NH0aP1WC0j6eicE+J1X6PpqGOD8ojXY/FZeaO+4tsD5YFvc+PceWPvk3Wj9UMxw+EHzJPsKyXj9WOyo+iWdkP4FZcD9zidw+QW50PxI3Bj/U6bA9YKZsP1B1Wj6uWa0+6D1dPyWFcj8Ho3c+uOFSP/XQIz7Ud0k9s+B4P1nHxD4+FSk/pJFoPXSuED/eAnA/W+5TPwrmoz65OU8/Tu2dPo6VdD6l+mM/eYayPdxAdz7pe8E+Kj0jP/xeKD+LFgE/ivsaP+6PAT/EYlU/3VNBP738HT9Td1Q/hBgDP30jfT+cYbk+wFs4P6dwOD9HOw4/JpBaPyd2UD/K3Q4/NSM9PhUMcD9eOos+QNoxPxDrBT+ozhs+0QppP2nvdj9ARFw+7mo2Pp/qpD4fzHY/PzEsPsnNwjxDATc/odWrPpDCrj4nFN8+OopCP9l+Nz5Bx0U/UtxvP8QUmj7jwTE/bcM4P3axdz3dFRw/smdoP/yGtD7c0SI/VtWgPg=="
+        },
+        {
+          "encoding": "base64",
+          "path": [
+            "z",
+            0,
+            "buffer"
+          ],
+          "data": "iqJXP/+qRz8jnes+cEAxP9E8mj1TyXw+FP/5PXq6ET/uuck+VksPP2RmRT/JqOg+SfBqP2zmwT5qICE/V3tlP3j/yj6WtYo8gt4oP1y0DD751ao+QqNoPlHPUj+tdVY/lT9xP/LjBj8Hx80+UxhCPwFqMj+6thE/nAg7Pk7yLT9KaEk/BX3+Pv68Dj8SfRY/Ty54PqDQ9zztQ2E/YKryPoNBSj4YzhA/RwBuPwHEUD7xkTw/TXtwPQvUUD5nlaM+pg/LPZUBAD/MXds+yz4/P9pMUD/Gphg/JNfIPsa0PD+sgmI+8AfZPQFa2j29jYQ+SV9kPvvsQT6ti5I+ppUUP4IyFT8wCwE/SCgIPvrvpj7zKto+6RltP/52Hz+6+bE+9J2zPh1+dj+ohJQ9woTQPoAa+T7d6/s+OY19PxwTQj/FYC4/0tcVP5cX/z67TNM+mJvCPmCkwzu2Gxs/4J43P4XZdT8lr1k/pEd6P/NqAj99X5c+/yv6PQ7DRj4vq+I918IIPgAuxz5vHKk+I0YZPw=="
+        }
+      ]
+    },
+    "f97d31da196c480baf213764722f0418": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    },
+    "2ea7aca13bec4383b4af0006a6566c0b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_model_module": "@jupyter-widgets/base",
+        "_model_module_version": "1.0.0",
+        "_model_name": "LayoutModel",
+        "_view_count": null,
+        "_view_module": "@jupyter-widgets/base",
+        "_view_module_version": "1.0.0",
+        "_view_name": "LayoutView",
+        "align_content": null,
+        "align_items": null,
+        "align_self": null,
+        "border": null,
+        "bottom": null,
+        "display": null,
+        "flex": null,
+        "flex_flow": null,
+        "height": null,
+        "justify_content": null,
+        "left": null,
+        "margin": null,
+        "max_height": null,
+        "max_width": null,
+        "min_height": null,
+        "min_width": null,
+        "order": null,
+        "overflow": null,
+        "overflow_x": null,
+        "overflow_y": null,
+        "padding": null,
+        "right": null,
+        "top": null,
+        "visibility": null,
+        "width": null
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "0b797a795e6d4ef680a01d15f93cea60"}
+</script>
+
+        
+
+</body>
+</html>

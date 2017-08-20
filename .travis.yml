@@ -1,0 +1,18 @@
+language: python
+
+matrix:
+  include:
+  - os: linux
+    sudo: required
+    python: 3.6
+    dist: trusty
+
+before_install:
+- pip install -U pip
+
+install:
+- travis_wait pip install -r test_requirements.txt
+
+script:
+- py.test
+
